@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>My To-Do List</h1>
+
+    <form id="taskForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <textarea id="description" placeholder="Description"></textarea>
+      <label for="dueDate">Due Date:</label>
+      <input type="date" id="dueDate" placeholder="Select due date" title="Due Date" />
+      <label for="priority">Priority:</label>
+      <select id="priority">
+        <option value="Low">Low</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div class="filter">
+      <label for="filter">Filter by Priority:</label>
+      <select id="filter">
+        <option value="All">All</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+
+  <footer class="footer">
+    <p>&copy; 2025 Advanced To-Do List. All rights reserved.</p>
+    <p>Developed by Ashish </p>
+  </footer>
+</body>
+</html>
